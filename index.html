@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<html>
+
+<!--  Header information for html file / webpage -->
+<head>
+
+<!--  Title of webpage -->
+<title>HATS Professional Services</title>
+
+<!--  Link to css file -->
+<link rel="stylesheet" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<!--  Header - Largest font size, in bold, usually used for title -->
+<h1>HATS Professional Services</h1>
+
+<!--  Navigation Bar/Menu, consisting of list of four items -->
+<div class = "topnav">
+  <a class= "active" href="index.html">Home</a></li>
+  <a href="index.html">About</a></li>
+  <a href="index.html">Testimonials</a></li>
+  <a href="index.html">Contact</a></li>
+</div> 
+
+<!--  Body contents, grouped using 'div', and further organized using 'span' with in-line css -->
+<div id="basicInfo">
+	<p><span class="title">HATS Professional Services</span> is an industry leader in market research and is dedicated to helping customers improve their industry standing with the hope of fostering competition</p>
+</div>
+
+<!--  Inset video -->
+<video width="320" height="240" controls>
+	<source src="media/Professional.mp4" type="video/mp4"> 
+</video> 
+<br/><br/>
+
+<!-- Table/Ordered List -->
+<table>
+	<tr>
+		<th>Small businesses - </th>
+		<th>Non-profit organizations - </th>
+		<th>Academics, faculty, students</th>
+	</tr>
+</table> 
+<br/><br/>
+
+<!-- Contact Form -->
+ <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="lname">Email:</label><br>
+  <input type="text" id="email" name="email"><br>
+  <label for="lname">Phone:</label><br>
+  <input type="text" id="phone" name="phone"><br>
+  <input type="submit" value="Submit">
+</form> 
+<br/><br/>
+
+<!-- Javascript with if/else statement and image inclusion -->
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "media/pic_bulboff.gif"
+  } else {
+    pic = "media/pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="media/pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<!--  Links -->
+<a href="https://www.google.com/">Visit Google.com for more info!</a> 
+
+</body>
+
+<!-- Footer information -->
+<footer>
+	<p>Accredited by Charlotte BBB</p>
+</footer>
+</html> 
